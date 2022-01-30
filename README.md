@@ -23,12 +23,15 @@ Average score of +13
 under 1800 training episodes
 
 ## Requirements
+The requiremnts needed for the project are listed below.
 ```
 unityagents
 numpy
 torch
 matplotlib (for plotting the learning curve)
 ```
+
+These libraries are also listed in the `requiremnts.txt` with the used version numbers.
 
 ## Setup Guide
 The code for starting the learning process can be found in the `Navigation.ipnb`. For setup the `python` folder from the course excercise is needed in the same directory
