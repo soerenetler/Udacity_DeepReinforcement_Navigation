@@ -13,11 +13,21 @@ An architecture consisting of three layers is used. The input dimensionality is 
 The implementation is very similar to the one in the privious project (https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/solution/Deep_Q_Network_Solution.ipynb). The hyperparameters are improved by increasing the output size of the first layer of the neural network.
 
 ## Hyperparameter
+The model contains the following hyperparamter. the parameter value are based on the previous project in the nanodegree and yield good results.
+
 ### Layers of the CNN
 The dimensionality of the hidden layer of the CNN is evaluated. Both 64, 128, 256 dimensions are tested.
 
 ### Epsilon
 The epsilon value for the epsilon-greedy policy defines how mus the much the model chooses the best possible action based on the result of the CNN or tries out other potentially worse action for exploration. This value is 1 in the beginning and decreases by 0.005 per episode until reaching 0.01.
+
+### Other Parameters
+ - BUFFER_SIZE = int(1e5)  # replay buffer size
+ - BATCH_SIZE = 64         # minibatch size
+ - GAMMA = 0.99            # discount factor
+ - TAU = 1e-3              # for soft update of target parameters
+ - LR = 5e-4               # learning rate 
+ - UPDATE_EVERY = 4        # how often to update the network
 
 ## Learning Curve
 ![Reward curve](learning.png?raw=true)
